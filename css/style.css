@@ -28,19 +28,18 @@ header{
     float: left;
 }
 .headerMenu {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
+     
     width: 600px;
-    height:50px ;
-    
-   
+    height: 50px ;   
     background-color: rgb(205, 170, 237);  
 }
 .headerMenu ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
     text-align: center;
     height: 100%;
+    right: 20px;
 }
 .headerMenu ul li{
     width: calc(100% / 4);
