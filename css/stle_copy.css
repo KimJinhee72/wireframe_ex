@@ -48,3 +48,31 @@ header{
 }
 /* 메인 */
 /* 메인상단 */
+.imgarea{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(254, 139, 177);
+}
+/* 메인하단 */
+.main_bottom{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(161, 161, 248);
+}
+.announce, .banner, .straight{
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: rgb(160, 252, 212) ;
+}
+/* 하단 */
+footer{
+    width: 100%;
+    height: 100px;
+}
+.footerLogo, .copyright, .sns{
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: rgb(242, 199, 199);
+}
