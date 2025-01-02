@@ -24,13 +24,18 @@ header{
     width: 200px;
     height: 100%;
     background-color: rgb(251, 212, 212);
+    /* 옆으로 붙기 위해서는  headerdml 로고와 메뉴 모두 float:left*/
     float: left;
 }
 .headerMenu{
+    /* li를 absolute 잡지않고 li의 부모 headerMenu에 잡는다 */
     position: absolute;
+    /* 위에서 50%잡힘 */
     top: 50%;
+    /* 오른쪽 20px잡힘 */
     right: 20px;
-    /* translateY Y를 해주어야  오른쪽 아래로 간다 */
+    /* translateY Y를 해주어야 y축 중간에 위치 로 간다 */
+    /* X로 하면 top50% 때문에 x축 중앙 아래에 갖다 붙는다 */
     transform: translateY(-50%);
     width: 600px;
     height: 50px;
@@ -43,6 +48,8 @@ header{
 .headerMenu ul li{
     width: calc(100% / 4);
     background-color: rgb(167, 167, 243);
+    /* 옆으로 붙기 위해서는  headerdml 로고와 메뉴 모두 float:left*/
+    /* 이때 headeMenu가 아니라 그 자식인 li에 float를 줘야한다 */
     float: left;
     line-height: 50px;
 }
